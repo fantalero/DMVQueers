@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events | DMV Queers</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header>
+      <div class="container nav" aria-label="Main navigation">
+        <div class="brand" aria-label="DMV Queers home">
+          <a class="brand-logo-link" href="index.html" aria-label="DMV Queers home">
+            <img class="brand-logo" src="assets/DMV%20Queers%20logo%20letters%20cropped.PNG" alt="DMV Queers" />
+          </a>
+        </div>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav id="site-menu" class="nav-links" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="events.html">Events</a>
+          <a href="board.html">Eboard</a>
+          <a href="gallery.html">Gallery</a>
+          <div class="nav-actions">
+            <a class="btn btn-secondary" href="volunteer.html">Volunteer</a>
+            <a class="btn btn-primary" href="donate.html">Donate</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="page-header">
+        <div class="container page-header-inner">
+          <span class="eyebrow">Events</span>
+          <h1>Community gatherings, learning spaces, and joyful action.</h1>
+        </div>
+      </section>
+
+      <section>
+        <div class="container event-grid">
+          <div class="event-tools" aria-label="Filter events">
+            <div class="event-filter-field">
+              <label for="event-search">search events</label>
+              <input id="event-search" type="search" placeholder="search by name or place" />
+            </div>
+            <div class="event-filter-field">
+              <label for="event-tag">event type</label>
+              <select id="event-tag">
+                <option value="all">all types</option>
+              </select>
+            </div>
+            <div class="event-filter-field">
+              <label for="event-from">from</label>
+              <input id="event-from" type="date" />
+            </div>
+            <div class="event-filter-field">
+              <label for="event-to">through</label>
+              <input id="event-to" type="date" />
+            </div>
+            <button class="btn btn-secondary" id="clear-event-filters" type="button">clear filters</button>
+          </div>
+
+          <p class="event-status" id="event-status" role="status" aria-live="polite"></p>
+
+          <article class="event-card" data-date="2026-06-28" data-tags="social community" data-search="community pride circle dc">
+            <div class="event-thumb" aria-hidden="true">PRIDE</div>
+            <div class="event-meta">
+              <span>June 28</span>
+              <span>DC</span>
+            </div>
+            <div class="event-details"><span>6:00 pm–9:00 pm</span><span>free</span></div>
+            <h3>Community Pride Circle</h3>
+            <p>An affirming social gathering with music, community resources, and a welcoming space to connect.</p>
+            <div class="chip-row">
+              <button class="chip event-tag-chip" type="button" data-tag="social">Social</button>
+              <button class="chip event-tag-chip" type="button" data-tag="community">Community</button>
+            </div>
+          </article>
+
+          <article class="event-card" data-date="2026-07-12" data-tags="volunteer mutual aid" data-search="mutual aid day silver spring">
+            <div class="event-thumb" aria-hidden="true">CARE</div>
+            <div class="event-meta">
+              <span>July 12</span>
+              <span>Silver Spring</span>
+            </div>
+            <div class="event-details"><span>10:00 am–2:00 pm</span><span>free</span></div>
+            <h3>Mutual Aid Day</h3>
+            <p>Volunteers and neighbors come together to share resources, support access, and strengthen care networks.</p>
+            <div class="chip-row">
+              <button class="chip event-tag-chip" type="button" data-tag="volunteer">Volunteer</button>
+              <button class="chip event-tag-chip" type="button" data-tag="mutual-aid">Mutual aid</button>
+            </div>
+          </article>
+
+          <article class="event-card" data-date="2026-07-20" data-tags="education resources" data-search="trans resource workshop virtual">
+            <div class="event-thumb" aria-hidden="true">EDU</div>
+            <div class="event-meta">
+              <span>July 20</span>
+              <span>Virtual</span>
+            </div>
+            <div class="event-details"><span>6:30 pm–8:00 pm</span><span>free</span></div>
+            <h3>Trans Resource Workshop</h3>
+            <p>A learning space covering rights, safety planning, and local support networks for trans people.</p>
+            <div class="chip-row">
+              <button class="chip event-tag-chip" type="button" data-tag="education">Education</button>
+              <button class="chip event-tag-chip" type="button" data-tag="resources">Resources</button>
+            </div>
+          </article>
+
+          <article class="event-card" data-date="2026-08-03" data-tags="orientation volunteer" data-search="volunteer orientation alexandria">
+            <div class="event-thumb" aria-hidden="true">JOIN</div>
+            <div class="event-meta">
+              <span>August 3</span>
+              <span>Alexandria</span>
+            </div>
+            <div class="event-details"><span>11:00 am–1:00 pm</span><span>free</span></div>
+            <h3>Volunteer Orientation</h3>
+            <p>New volunteers can learn about our roles, responsibilities, and how to help support community programming.</p>
+            <div class="chip-row">
+              <button class="chip event-tag-chip" type="button" data-tag="orientation">Orientation</button>
+              <button class="chip event-tag-chip" type="button" data-tag="new-volunteers">New volunteers</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="calendar-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="eyebrow">calendar</span>
+            <h2>see the full community calendar</h2>
+            <p>Use the calendar for dates, times, locations, and event updates.</p>
+          </div>
+          <div class="calendar-embed" id="calendar-embed" data-calendar-url="https://calendar.google.com/calendar/embed?src=dmvqueers%40gmail.com&amp;ctz=America%2FNew_York">
+            <p>loading calendar...</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="cta-banner">
+            <div>
+              <h3>Want to host or support an event?</h3>
+              <p>We are always looking for volunteers, partner organizations, and community hosts.</p>
+            </div>
+            <a class="btn btn-secondary" href="volunteer.html">Get involved</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-grid">
+        <div>
+          <a class="footer-logo-link" href="index.html" aria-label="DMV Queers home">
+            <img class="footer-logo" src="assets/DMV%20Queers%20logo.PNG" alt="DMV Queers full logo" />
+          </a>
+          <h3>DMV Queers</h3>
+          <p><span class="footer-safe-space">safe space.</span>community care.<br />collective action.<br />resistance.<br />joy.</p>
+          <div class="container footer-small">© 2021 DMV Queers | est. 2021</div>
+        </div>
+        <div>
+          <h4>connect with us</h4>
+          <div class="social-links" aria-label="Contact and social media links">
+            <a class="social-link email-link" href="mailto:dmvqueers@gmail.com" aria-label="Email DMV Queers" title="Email DMV Queers"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2Zm0 2 8 6 8-6" /></svg></a>
+            <a class="social-link" href="https://www.instagram.com/dmvqueers/" target="_blank" rel="noopener noreferrer" aria-label="DMV Queers on Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2.2A2.8 2.8 0 0 0 4.2 7v10A2.8 2.8 0 0 0 7 19.8h10a2.8 2.8 0 0 0 2.8-2.8V7A2.8 2.8 0 0 0 17 4.2H7Zm10.7 1.6a1.3 1.3 0 1 1 0 2.6 1.3 1.3 0 0 1 0-2.6ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2.2a2.8 2.8 0 1 0 0 5.6 2.8 2.8 0 0 0 0-5.6Z" /></svg></a>
+            <a class="social-link" href="https://www.tiktok.com/@dmvqueers" target="_blank" rel="noopener noreferrer" aria-label="DMV Queers on TikTok" title="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.7 2h3.1c.2 1.8 1.2 3.3 3 4.1v3.2a8.3 8.3 0 0 1-3-.9v6.2a5.4 5.4 0 1 1-5.4-5.4c.4 0 .8 0 1.2.1v3.3a2.2 2.2 0 1 0 1.2 2V2Z" /></svg></a>
+            <a class="social-link" href="https://wa.me/?text=Hello%20DMV%20Queers" target="_blank" rel="noopener noreferrer" aria-label="Message DMV Queers on WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 15l-1.1 4 4.1-1.1A10 10 0 1 0 12 2Zm0 2a8 8 0 0 1 6.9 12l-.3.5.6 2.1-2.2-.6-.5.3A8 8 0 1 1 12 4Zm-3 3.5c-.3 0-.6.1-.8.4-.3.3-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.5 3.9 3.4 1.9.8 2.3.6 2.7.6.4 0 1.3-.5 1.5-1 .2-.5.2-1 .1-1.1-.1-.1-.3-.2-.7-.4l-1.2-.6c-.3-.1-.5-.1-.7.2l-.5.6c-.1.2-.3.2-.6.1-.3-.1-1.1-.4-1.7-1-.5-.4-.8-1-.9-1.2-.1-.2 0-.3.1-.5l.4-.4c.1-.2.1-.3 0-.5l-.5-1.3c-.1-.4-.3-.6-.7-.6Z" /></svg></a>
+            <a class="social-link" href="https://www.linkedin.com/company/dmvqueers/" target="_blank" rel="noopener noreferrer" aria-label="DMV Queers on LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.7 3A1.7 1.7 0 1 1 4.7 6.4 1.7 1.7 0 0 1 4.7 3ZM3.2 8.3h3v12.2h-3V8.3Zm4.9 0H11v1.7h.1c.4-.8 1.5-2 3.6-2 3.1 0 3.7 2 3.7 4.7v7.8h-3v-6.9c0-1.6 0-3.6-2.2-3.6s-2.5 1.7-2.5 3.5v7h-3V8.3Z" /></svg></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const navToggle = document.querySelector('.nav-toggle');
+      const navLinks = document.querySelector('.nav-links');
+
+      if (navToggle && navLinks) {
+        navToggle.addEventListener('click', () => {
+          const isOpen = navLinks.classList.toggle('is-open');
+          navToggle.classList.toggle('is-open', isOpen);
+          navToggle.setAttribute('aria-expanded', String(isOpen));
+        });
+      }
+
+      const sheetCsvUrl = 'https://docs.google.com/spreadsheets/d/1gLE2oUJTVh7uf1UG0F-BI44nAzAyibvSpV-xOtMfVJU/export?format=csv';
+      const eventGrid = document.querySelector('.event-grid');
+      let eventCards = [...document.querySelectorAll('.event-card')];
+      const eventSearch = document.querySelector('#event-search');
+      const eventTag = document.querySelector('#event-tag');
+      const eventFrom = document.querySelector('#event-from');
+      const eventTo = document.querySelector('#event-to');
+      const eventStatus = document.querySelector('#event-status');
+      const clearFilters = document.querySelector('#clear-event-filters');
+
+      function populateTags() {
+        eventTag.querySelectorAll('option:not(:first-child)').forEach((option) => option.remove());
+        const tags = [...new Set(eventCards.flatMap((card) => card.dataset.tags.split(' ')))].sort();
+        tags.forEach((tag) => {
+        const option = document.createElement('option');
+        option.value = tag;
+        option.textContent = tag.replace(/-/g, ' ');
+        eventTag.append(option);
+        });
+      }
+
+      function parseCsv(csv) {
+        const rows = [];
+        let row = [];
+        let cell = '';
+        let quoted = false;
+
+        for (let index = 0; index < csv.length; index += 1) {
+          const character = csv[index];
+          const nextCharacter = csv[index + 1];
+          if (character === '"' && quoted && nextCharacter === '"') {
+            cell += '"';
+            index += 1;
+          } else if (character === '"') {
+            quoted = !quoted;
+          } else if (character === ',' && !quoted) {
+            row.push(cell.trim());
+            cell = '';
+          } else if ((character === '\n' || character === '\r') && !quoted) {
+            if (character === '\r' && nextCharacter === '\n') index += 1;
+            row.push(cell.trim());
+            if (row.some(Boolean)) rows.push(row);
+            row = [];
+            cell = '';
+          } else {
+            cell += character;
+          }
+        }
+
+        if (cell || row.length) {
+          row.push(cell.trim());
+          rows.push(row);
+        }
+
+        const headers = rows.shift().map((header) => header.replace(/^\uFEFF/, '').trim().toLowerCase().replace(/\s+/g, ''));
+        return rows.map((values) => Object.fromEntries(headers.map((header, index) => [header, values[index] || ''])));
+      }
+
+      function normalizeDate(value) {
+        const parsed = new Date(value);
+        return Number.isNaN(parsed.getTime()) ? value : parsed.toISOString().slice(0, 10);
+      }
+
+      function createEventCard(event) {
+        const card = document.createElement('article');
+        const tags = event.tags.toLowerCase().split(/[, ]+/).filter(Boolean);
+        const date = normalizeDate(event.date);
+        card.className = 'event-card';
+        card.dataset.date = date;
+        card.dataset.tags = tags.join(' ');
+        card.dataset.search = `${event.title} ${event.location} ${event.description}`.toLowerCase();
+        card.innerHTML = `<div class="event-thumb" aria-hidden="true">${(tags[0] || 'event').slice(0, 8).toUpperCase()}</div><div class="event-meta"><span>${event.date}</span><span>${event.location}</span></div><div class="event-details"><span class="event-time"></span><span class="event-cost"></span></div><h3></h3><p></p><div class="chip-row"></div>`;
+        card.querySelector('h3').textContent = event.title;
+        card.querySelector('p').textContent = event.description;
+        card.querySelector('.event-time').textContent = event.time || 'time to be announced';
+        card.querySelector('.event-cost').textContent = event.cost || 'cost to be announced';
+        tags.forEach((tag) => {
+          const chip = document.createElement('button');
+          chip.className = 'chip';
+          chip.classList.add('event-tag-chip');
+          chip.type = 'button';
+          chip.dataset.tag = tag;
+          chip.textContent = tag.replace(/-/g, ' ');
+          card.querySelector('.chip-row').append(chip);
+        });
+        if (event.link) {
+          const link = document.createElement('a');
+          link.className = 'btn btn-secondary';
+          link.href = event.link;
+          link.textContent = 'event details';
+          card.append(link);
+        }
+        return card;
+      }
+
+      function replaceEvents(rows) {
+        eventCards.forEach((card) => card.remove());
+        rows.map(createEventCard).forEach((card) => eventGrid.append(card));
+        eventCards = [...eventGrid.querySelectorAll('.event-card')];
+        populateTags();
+        filterEvents();
+      }
+
+      function filterEvents() {
+        const query = eventSearch.value.trim().toLowerCase();
+        const tag = eventTag.value;
+        const from = eventFrom.value;
+        const to = eventTo.value;
+        let visibleCount = 0;
+
+        eventCards.forEach((card) => {
+          const matchesQuery = !query || card.dataset.search.includes(query);
+          const cardTags = card.dataset.tags.split(' ');
+          const matchesTag = tag === 'all' || cardTags.includes(tag);
+          const matchesFrom = !from || card.dataset.date >= from;
+          const matchesTo = !to || card.dataset.date <= to;
+          const isVisible = matchesQuery && matchesTag && matchesFrom && matchesTo;
+          card.hidden = !isVisible;
+          if (isVisible) visibleCount += 1;
+        });
+
+        eventStatus.textContent = `${visibleCount} event${visibleCount === 1 ? '' : 's'} shown`;
+      }
+
+      [eventSearch, eventTag, eventFrom, eventTo].forEach((control) => {
+        control.addEventListener('input', filterEvents);
+        control.addEventListener('change', filterEvents);
+      });
+
+      clearFilters.addEventListener('click', () => {
+        eventSearch.value = '';
+        eventTag.value = 'all';
+        eventFrom.value = '';
+        eventTo.value = '';
+        filterEvents();
+      });
+
+      eventGrid.addEventListener('click', (event) => {
+        const tagButton = event.target.closest('.event-tag-chip');
+        if (!tagButton) return;
+        eventTag.value = tagButton.dataset.tag;
+        filterEvents();
+      });
+
+      populateTags();
+      filterEvents();
+
+      if (sheetCsvUrl) {
+        fetch(`${sheetCsvUrl}&cacheBust=${Date.now()}`, { cache: 'no-store' })
+          .then((response) => {
+            if (!response.ok) throw new Error('event feed unavailable');
+            return response.text();
+          })
+          .then((csv) => {
+            const sheetEvents = parseCsv(csv);
+            if (sheetEvents.length) {
+              replaceEvents(sheetEvents);
+              eventStatus.textContent = `${sheetEvents.length} event${sheetEvents.length === 1 ? '' : 's'} loaded from Google Sheets`;
+            } else {
+              eventStatus.textContent = 'add events to the Google Sheet to publish them here';
+            }
+          })
+          .catch(() => {
+            eventStatus.textContent = 'showing the saved event list';
+          });
+      }
+
+      const calendarEmbed = document.querySelector('#calendar-embed');
+      const calendarUrl = calendarEmbed.dataset.calendarUrl;
+      if (calendarUrl) {
+        calendarEmbed.innerHTML = `<iframe src="${calendarUrl}" title="DMV Queers Google Calendar" loading="lazy"></iframe>`;
+      }
+    </script>
+  </body>
+</html>
